@@ -1,0 +1,59 @@
+****************************************************************
+
+			HEXAWARE WRITTEN TEST
+
+****************************************************************
+
+
+1. In Selenium variables are stored in _____________
+A.  storedVars
+B.   storedVariables
+C.    VariablesStore
+D.    All of the above
+Answer: storedvars
+In selenium we use 2 functions for storing value into variables. store(expression, variable name) and storedvars[‘variablename’]. Therefore, as per the option only storedvars is the correct answer. 
+
+2. How many keywords are used in Gherkin steps? 
+A.   5
+B.   6
+C.    4
+D.    None of the above
+Answer: 5
+Each step starts with Given , When , Then , And , or But
+
+3. Selenium Data driven testing can be done only using excel files?
+A.  True
+B.  False 
+Answer: False
+We can use other files as well, CSV, text files etc.
+
+4. Selenium Data driven testing can be done only using excel files?
+A.  [\\s]
+B.  \\S
+C. [\\s]*
+D. *[\\s]
+Answer: [\\S]
+Pattern patt = Pattern.compile("[\\s]"); 
+Matcher mat = patt.matcher(s);
+return mat.replaceAll("");
+
+
+5. In the browser cookie, which argument reads the name of the cookie? 
+A.  Cookie(name,value,domain,path,expiry,isSecure);
+B.  Cookie(value,name,domain,path,expiry,isSecure);
+C. Cookie(domain,path,expiry,isSecure, name,value,);
+D.  Cookie(name,value,);
+Answer: A
+Cookie(name,value,domain,path,expiry,isSecure);
+
+6. In webDriver, how to close the current window?
+A.  close()
+B.  quit()
+C. dispose()
+D.  cancel()
+Answer: A
+
+7. Which Selenium application supports Flex/Flash applications?
+Ans. Flex UI Selenium
+
+8. Which Selenium application supports Flex/Flash applications?

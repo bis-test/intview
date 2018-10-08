@@ -1,0 +1,42 @@
+What is abstraction in java? 
+In java, Abstraction means show functionality and hide complexity or internal details or hide implementation details to the user is known as abstraction in java.
+
+For example:
+The best example in the world of abstraction is ATM machine where we can withdraw or transfer money easily 
+but how it happens? we don't know. We don't know internal details or implementation details.
+ 
+
+How to achieve abstraction in java?
+There are two ways in java we can achieve abstraction. By using abstract class(0 to 100%).By using interface(100%).
+note: Up to 1.7 version 
+ 
+
+What is abstract class in java?
+When we declared any class with "abstract" keyword is known as abstract class. In abstract class we can keep abstract method(without body) and non-abstract method(with body).
+
+For example:
+public abstract class Demo{
+
+    public abstract void show();  //abstract method
+
+    public void show(){} //non-abstract method
+}
+  
+
+Can we create instance of abstract class?
+   No, We cannot create an instance of an abstract class.
+
+
+Can we define abstract class without abstract method?
+   Yes, We can define abstract class without abstract method.
+
+
+Can we declare abstract method in non-abstract class?
+   No, We can't declare abstract method in non-abstract class.
+
+For example:
+   public class Demo{
+     public abstract void show();
+    }
+
+Above example will throw compile time error.

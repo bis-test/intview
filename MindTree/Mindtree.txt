@@ -1,0 +1,19 @@
+Interview questions @ Mind Tree
+1. How will find elements in the application 
+2. Types of locators
+3. Which locator is best and why?
+4. About xpath and its types
+5. Arraylist in ascending order using collections 
+6. Explain ur framework 
+7. Code for fetch data from excel 
+8. What is jenkins and its purpose 
+9. Methods in collections list and set
+10. On clicking a button parent window gets closed and new window opens- can Selenium handle this, if yes explain how
+11. Commands in jenkins
+12. Explain page object model
+13. What is the extension of cucumber file 
+14. How feature file and step definition are linked
+15. What does feature file contains 
+16. What does step definition file contains 
+17. How to select values from drop down
+18. How to get user input in selenium

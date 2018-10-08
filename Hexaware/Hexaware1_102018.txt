@@ -1,0 +1,9 @@
+*******************************************
+	HEXAWARE INTERVIEW QUESTION
+*******************************************
+1) Explain a scenario where you use collections in your project
+2) How do you handle exceptions?
+3) How will you upload and download documents 
+4) How do you read data in excel and also given specific cells and fetch data from those cells
+5) How do you print in extent reports when there is an exception occurred and driver entered in catch block
+6) In which level we can have attribute in TestNG xml

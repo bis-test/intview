@@ -1,0 +1,231 @@
+************************************************************
+			HEXAWARE
+************************************************************
+
+1. What is the difference between assert and verify?
+
+- Both Assert and Verify are used for adding validations to test methods
+- Testing frameworks like TestNG, JUnit are used with selenium to apply assertions.
+- The only difference between Assert and Verify is that 
+  In Assert if the validation fails then the execution stops. In TestNG it's Assert, and called Hard Assert
+  In verify the execution continues after the failure, although the test method is marked as fail.In TestNG it's softAssert
+
+@Test
+public void assertionTest()
+{
+   //Assertion Passing
+   Assert.assertTrue(1+2 == 3);
+   System.out.println("Passing 1");
+   
+   //Assertion failing
+   Assert.fail("Failing second assertion");
+   System.out.println("Failing 2");
+}
+
+The output is, it will print 'Passing1' but will abort for the second assert
+java.lang.AssertionError: Failing second assertion
+
+@Test
+public void softAssertionTest()
+{
+   //Creating softAssert object
+   SoftAssert softAssert = new SoftAssert();
+
+   //Assertion failing
+   softAssert.fail("Failing first assertion");
+   System.out.println("Failing 1");
+   
+   //Assertion failing
+   softAssert.fail("Failing second assertion");
+   System.out.println("Failing 2");
+
+   //Collates the assertion results and marks test as pass or fail
+   softAssert.assertAll();
+}
+
+
+
+
+
+The output
+Failing 1
+Failing 2
+FAILED: softAssertionTest
+java.lang.AssertionError: The following asserts failed:
+Failing first assertion,
+Failing second assertion
+Here, we can see that even though both the test methods are bound to fail, still the test continues to execute.
+
+2. How to reverse a string?
+
+        String input = "Geeks For Geeks";
+        char[] temparray = input.toCharArray();
+        int left, right=0;
+        right = temparray.length-1;
+ 
+        for (left=0; left < right ; left++ ,right--)
+        {
+            // Swap values of left and right
+            char temp = temparray[left];
+            temparray[left] = temparray[right];
+            temparray[right]=temp;
+        }
+ 
+        for (char c : temparray)
+            System.out.print(c);
+        System.out.println();
+
+
+------------------------------------------------------------------
+
+       String input = "Geeks For Geeks";
+        char[] hello = input.toCharArray();
+        List<Character> trial1 = new ArrayList<>();
+ 
+        for (char c: hello)
+            trial1.add(c);
+ 
+        Collections.reverse(trial1);
+        ListIterator li = trial1.listIterator();
+        while (li.hasNext())
+            System.out.print(li.next());
+
+
+
+
+
+
+3. How to print all values from a webtable?
+
+public class WebTableDemo5 {
+	public static void main(String[] args) {
+
+		//Launch the browser
+		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+		ChromeDriver driver= new ChromeDriver();
+		
+		//Open the webpage
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.get("http://toolsqa.wpengine.com/automation-practice-table");
+		
+		//1. Find the table on the page.
+		WebElement table = driver.findElementByXPath(".//*[@id='content']/table");
+		
+		//2. Find the total number of rows
+		List<WebElement> rows = table.findElements(By.tagName("tr"));
+		int rcount= rows.size();
+		
+		//First and second row are header and footer so reduce by 2
+		rcount= rcount-2;
+		System.out.println("The total number of rows= " +rcount);
+	
+		//3. Find the total number of columns
+		List<WebElement> cols = table.findElements(By.tagName("td"));
+		int colcount= cols.size();
+		
+	            //override the colvalue as this table is differently designed.
+		colcount= colcount/rcount;
+		System.out.println("The total number of columns= " +colcount);
+		
+		//4. Use for loop and traverse each row & column to print cell value
+		for (int i=1; i<=rcount; i++)
+		{
+			System.out.println();
+		    for (int j=1;j<=colcount;j++)
+		    {
+		    	
+WebElement cell = driver.findElement(By.xpath(".//*[@id='content']/table/tbody/tr[" + i + "]/td["+ j +"]"));
+System.out.print("        "+cell.getText());
+		    }
+		    		
+		}
+
+		driver.close();
+	}
+}
+4. Write a code for window handling?
+
+Set handles = driver.getWindowHandles(); 
+ System.out.println(handles);
+
+for (String handle1 : driver.getWindowHandles()) 
+{ 
+                System.out.println(handle1);
+                driver.switchTo().window(handle1);
+  }
+
+5. What is the difference between WindowHandle & WindowHandles?
+driver.getWindowHandle() gives you the current window handle on which your driver object is pointing to.
+driver.getWindowHandles() gives you all the window Handles which are currently active on the machine
+
+6. What is the difference between quit() and close()?
+
+    WebDriver.Close() This method is used to close the current open window. It closes the current open window on which driver has focus on.
+
+    WebDriver.Quit() This method is used to destroy the instance of WebDriver. It closes all Browser Windows associated with that driver and safely ends the session. WebDriver.Quit() calls Dispose.
+
+    WebDriver.Dispose() This method closes all Browser windows and safely ends the session
+
+7. In your project, have you encountered any exception and how did you handle it?
+Yes, in the application we have faced,  StaleElementReferenceException
+
+--so, we have refreshed the page and then tried to click
+driver.navigate().refersh();
+driver.findElement(By.xpath("xpath here")).click();
+
+--If an element is not attached to DOM then you could try using ‘try-catch block’ within ‘for loop’
+for(int i=0; i<=2;i++){
+  try{
+     driver.findElement(By.xpath("xpath here")).click();
+     break;
+  }
+  catch(Exception e){
+     Sysout(e.getMessage());
+  }
+}
+---wait for the element until available
+wait.until(ExpectedConditions.presenceOfElementLocated(By.id("table")));
+
+---Use ExpectedConditions.refreshed to avoid StaleElementReferenceException and retrieve the element again. 
+This method updates the element by redrawing it and we can access the referenced element.
+wait.until(ExpectedConditions.refreshed(ExpectedConditions.stalenessOf("table")));
+8. For example if the code is this <a>Text</a> what are the ways you can write x path for this?
+
+//*[text()='Text']
+//a[contains(text(),'SAP M')]"
+//*[contains(@a,'Text')]
+
+9. What is alert? How to handle it?
+Alert is a pop up window that comes up on screen. There are many user actions that can result in an alert on screen. 
+For e.g. user clicked on a button that displayed a message or may be when you entered a form, HTML page asked you for some extra information. 
+
+    simple Alert -- just have OK on them
+    driver.switchTo().alert().accept
+
+    Confirmation Alert --- OK or CANCEL
+    driver.switchTo().alert().accept()
+    driver.switchTo().alert().dismiss()
+
+    Prompt alert -- you get an option to add text to the alert box. 
+    This is specifically used when some input is required from the user. 
+    We will use the sendKeys() method to type something in the Prompt alert box
+    String alertText = driver.switchTo().alert().getText()       ------ To get the text of the alert
+    driver.switchTo().alert().sendKeys("Accept")                 ----To write some text to the alert
+
+10. Why are we creating object for another class and also extending another class?
+Reusability. By extending class we can inherit the properties/access methods of the class
+This way we can reuse the common codes and don't have to write again and again.
+
+11. Why your project needs automation?
+In Agile methodology we have frequent builds, so if we don't automate the projects, it's not possible to manually test everything in a short span of time
+So in a frequently changing environement its really critical to have test scripts ready and run periodically.
+
+12. Who decides its project specific methods in your project?
+Test architect
+instead of duplicating codes, we can have it in a wrapper
+
+13. What is the method overloading? 
+frame(int), frame(webelement), frame(name)
+
+14. Can we send keys on an element?
+We can’t sendKeys on an element. It is meant to supply data to webElements, so we can pass data to input box, prompt, text areas etc.

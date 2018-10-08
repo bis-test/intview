@@ -1,0 +1,26 @@
+1. Fibonacci series
+2. Armstrong number
+3. Print numbers 1 to 10 excluding4 and 6
+4. Write an array in ascending order
+5. What s Regression test means 
+6. Difference between regression and retest
+7. Bug life cycle
+8. Difference between string,  string buffer,  and builder
+9. Why string s immutable
+10. Testng XML design
+11. If two test cases( test )Wat s the is flow
+12. Testng annotations
+13. Cucumber annotations and explain
+14. Why maven
+15. How to achieve both Testng and cucumber in a single framework 
+16. What's glue
+17. Locators
+18. How do you run in jenkins
+19. How do you push the code in GIT
+20. Grid concept
+21. Tell about ur project how u protect ur project 
+22. Data provider
+23. Paramaters
+24. Include an exclude
+25. Priority and seveority with examples
+26. How u run Testng randomly this s one of the quest asked in first round

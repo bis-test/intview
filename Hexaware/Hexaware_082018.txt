@@ -1,0 +1,35 @@
+***************************************************************
+			HEXAWARE - AUG 2018
+***************************************************************
+
+
+1. HTML unit driver is used for what?
+2. Which function in x path is used to trim text?
+3. Which is not a locator (pick from the list, ans= value)
+4. Which is not an exception?
+5. How to move forward-  navigate().forward()?
+6. Which selenium tool is used for flex applications?
+7.  Where selenium IDE variables are stored? 
+8. Which x path node will select grand parent, parent etc?
+9. How to get the current directory? Driver.getpath…
+10. How to read excel? FileInputStream…
+11. WebDriver wait (wait.wait.until…) which type of wait? Explicit/implicit
+12.  Stale element exception is when …
+13. How to get the size of a list? Size()
+14.  webdriver.cssselector(#object)
+       Object1
+      Object 2
+15. Webdriver, How to bring an element to front?
+16.  WebDriver, how to read text from an element?
+17. How will you validate a button in selenium?
+       Find element, assert verify
+18. @before using we can run the method before each test.
+19. @after using we can run the method after each test.
+20. how to run the test in TestNG? Ans @Test
+21. how to hover an element in selenium?
+22. How many keywords are used in Gherkin steps? 
+23. Selenium Data driven testing can be done only using excel files?
+24. In the browser cookie, which argument reads the name of the cookie?
+25. In webDriver, how to close the current window?
+26. JDBC program in java
+27. Inheritance program (using constructor)

@@ -1,0 +1,15 @@
+Technical round in TCS:
+1. Diff bw HashMap and Hash Table
+2. Method overloading n Method overriding,other name of those
+3. Write a pgm to get input from the user n print it in the console
+4. Diff bw String, String buffer and String builder . Explain with a program for immutable.
+5. diff bw throw and throws.
+6. What is the Super class for all the selenium exceptions.
+7. What all the exceptions u know in selenium.
+8. How to print the values from drop-down
+9. Pgm to find the duplicate values.
+10. Write a property which will not allow the parent class to inherit the child class properties
+11. What is Enum
+12. Diff between driver.get and driver.navigate
+13. Write a pgm to load Google page n type in the text box.
+14. Why do we need System.setProperty

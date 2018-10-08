@@ -1,0 +1,56 @@
+*************************************************************
+			BANK BAZAR
+*************************************************************
+
+Ist round - written test with 4 questions
+
+1. Given a test condition they asked us to write scenarios and clarification on that test condition.
+2. Write valid and invalid data to check an email id field.
+3. Write a program to find 2nd largest element in an array.
+4. What is the output of the following & why?
+class A
+{
+
+ int i;
+ void display()
+ {
+   System.out.println(i);
+ }
+
+}
+
+class B extends A
+{
+  int j;
+  void display()
+  {
+    System.out.println(j);
+  }
+
+}
+
+class inheritance_demo
+{
+  public static void main(String args[])
+  {
+    B obj = new B();
+    obj.i=1;
+    obj.j=2;
+    obj.display();
+  }
+
+}
+
+
+2nd round - Manual testing f2f interview:
+-Different types of testing 
+-defects, agile process, 
+-about your project and your role, 
+-more question on agile and all basic testing questions
+
+3rd round - regarding automation.
+- What framework you use, explain it, why do we go from tat, what is the use.
+- Encapsulation
+- Some basic java questions
+- Then given some testing scenario how to handle it.
+

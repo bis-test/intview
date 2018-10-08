@@ -1,0 +1,15 @@
+****************************************************
+			VIRTUSA - October 2018
+****************************************************
+
+1. How do you change your webdriver to run in remote machines
+2. Explain framework
+3. Reverse string 
+4. How to enter user name and password in alerts
+5. Tools that you have worked in
+6. If we navigate to second window from first how will we get back
+7. How do you group test cases in testng 
+8. If there is a @test after @Aftersuite what will happen
+9. Structure of testng.xml file
+10. How to upload a file using selenium
+11. How to read data from excel

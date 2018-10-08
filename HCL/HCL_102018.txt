@@ -1,0 +1,40 @@
+***************************************************
+		HCL - October 2018
+**************************************************
+
+1st round 
+They gave a scenario as we have to automate the capital.com website 
+1.load
+2.login
+3.mouseover
+4.select the available drop-down options 
+5.select the one from that 
+6.pop-up appears 
+7.select that 
+8.new windows opens 
+9.there we have select a plan and check it 
+10. In that a calendar box will be there. 
+11. We have to enter the future date 
+After writing the scripts for all the above test cases in paper we have to explain to the interviewer  regarding .
+Note :he asked us to provide the login credentials as it is from the excel sheet 
+12. Script to locate the dynamic xpath
+13. Code to print the  integers from the given array 
+14. How to read the first three rows from database 
+15. Asked to write the code for that 
+
+
+
+Client round (2nd) 
+1. Frame work 
+2. How to run the particular categorized test cases 
+3. Similarly in cucumber how?? 
+4. Widow handling 
+5. Drawn the window with frames  and asked to find the total number of frames 
+6. Excel read code explanation 
+7. Library file for excel xssf workbook 
+8. BDD explanation 
+
+
+
+Second with client round
+1.framework

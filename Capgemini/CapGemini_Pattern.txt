@@ -1,0 +1,9 @@
+************************************************
+	CapGemini Interview Pattern
+************************************************
+
+1st round written (if there is more crowd - generally when you have walk in)
+
+Next : Technical ( Focus on Java mostly) + Selenium (Framework + Web Table + XPath ) 
+
+Next : Managerial (Mostly not on same day but depends on the crowd)

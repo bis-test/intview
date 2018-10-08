@@ -1,0 +1,12 @@
+******************************************************
+Zoho Selenium Interview Questions:
+*****************************************************
+1. How to use colors in webdriver in selenium
+2.What are the various deselector methods in selenium
+3.how to verify drop down having the multiple select
+4.how to check in the google search page whether search text box and search button are besides each other
+5.How to handle hidden elements in Selenium
+6.Write a query to join 3 tables
+7.Explain static block
+8.difference b/w assert and verify
+9.difference b/w set and map

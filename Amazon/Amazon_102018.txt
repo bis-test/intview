@@ -1,0 +1,26 @@
+************************************
+	AMAZON - October
+************************************
+
+Written Test: 1st Round
+
+1. Testcase enumeration: 
+    Write all possible testcases & expected results for credit card payments page.
+
+2. Find repeated numbers from an array?
+
+Input: 4,2,3,1,5,1
+Output: 1 is repeated 2 times.
+
+Input:5,7,12,1,7,5,7
+Output: 5 is repeated 2 times, 7 is repeated 3 times
+
+3. Reverse a string by alternate words
+Input: This is no test
+Output: tset no si This
+
+4. Write testdata for email validation.
+   void EmailValidation(String EmailAmazon)
+   E.g= iamamazon@amazon.com
+
+5.When we are setting alarm, the phone is getting switched off. How to debug? 

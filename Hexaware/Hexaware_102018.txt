@@ -1,0 +1,98 @@
+****************************************************************
+
+			HEXAWARE QUESTIONS
+
+****************************************************************
+SELENIUM
+
+1. Which component of selenium allows customized Report. Ans: Webdriver
+2. GetTitle code: driver.getTitle();
+3,4,5 - Select Dropdown related codes [how to deselect all Selected options – Ans: deselectAll( )x`, select by Value, Select byIndex]
+6.IDE code - how will you check an element is present.VERIFYELEMENTPRESENT/AssertElementPresent
+7.verify expected Title with actual title
+8.How to find the Count of FindElements - (Ans - driver.findElements(By....).getSize(); )
+9.IDE code to Verify Presence of an Element: [Ans - verifyElementPresent ,verifyElementNotPresent ]
+10.IDE code to Verify Presence of a Certain Text in a Page: [verifyTextPresent ,verifyTextNotPresent ]
+11. What is DOM - Document Object Model.
+12.How to debug in IDE: Options: Pause and Resume, Step... etcANS: Pause, Break and Step.
+13.How will you sync... options: 4 options with diff Syncs: ANs: WaitFor Commands
+14. CLick and ClickAndWait diff? Ans - "clickAndWait" command is somewhat different than "click" command. It will wait for page to load means next command will be not executed until page not loaded successfully. You need to use this command when youare clicking somewhere on page of software web application and page start reloading content.
+15.driver.close and driver.quit difference.
+16.Where can u find the Html code… Ans[Source]
+17. Java code to get Current Directory. Ans: System. getProperty("user.dir");
+18. how to trim Xpath ://td[normalize-space()="Attribute Value"]
+20.How to convert Xpath to Uppercase: 
+21.To Initialize Web Elements: initElements.
+22.In Selenium variables are stored in :storedVars
+23.Xpath to select Parent, GrandParent and So on :  Ancestors.
+24.Selenium Navigate forward code: driver.navigate().forward();
+25.How to execute Javascript: Javascriptexecutor,executeScript
+26.Delete Cookies: 
+driver.manage().deleteCookie(arg0);  // Delete specific cookie
+driver.manage().deleteCookieNamed(arg0); // Delete specific cookie according Name
+driver.manage().deleteAllCookies();  // Delete all cookies
+
+
+
+
+
+For IDE COdes refer:
+https://www.guru99.com/enhancing-selenium-ide-script.html
+other IDE Codes:
+waitForTitle
+waitForTextPresent
+waitForAlert
+
+
+
+
+The three most commonly used commands in verifying page elements are:
+verifyElementPresent/ verifyElementNotPresent
+verifyTextPresent/ verifyTextNotPresent
+verifyElementPositionLeft/ verifyElementPositionTop
+
+
+
+
+Wait commands are classified into two:
+andWait commands - used when a page is expected to be loaded
+waitFor commands - used when no new page is expected to be loaded
+
+
+***********************************************************************
+
+				JAVA
+
+***********************************************************************
+
+Q1: What is the output of the code below?
+
+intx;int y=1;
+x=10;
+if(X!==0 && X/0==0){
+Y=X;
+}
+else{
+++Y;
+}
+
+what is the value of Y now?
+Ans:
+Y = 2
+Logic: 
+++a Pre Increment - increments and then uses the variable.
+a++ Post Increment - uses and then increments the variable.
+If you have
+a = 1;
+and you do
+System.out.println(a++); //You will see 1
+
+//Now a is 2
+
+System.out.println(++a); //You will see 3
+
+
+Q2. Find factorial using recursion methods.
+
+Q3. Which line of the given code will throw Compiler time exception? [some code given]
+

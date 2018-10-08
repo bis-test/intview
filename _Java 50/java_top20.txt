@@ -1,0 +1,24 @@
+Top 20 Java Interview Questions (Programming + Descriptive)
+
+Programming Questions (Atleast 2 solutions for each) :
+
+ 1) Reverse a given String or number : "I am doing good"
+ 2) Find the duplicates numbers from given array : {1,3,3,7,8,8,9}
+ 3) Print Fibbinocci series (1,1,2,3,5,8,13,21,34}
+ 4) Print triangle pattern with 4 layers using * 
+ 5) Validate if the given number is Prime? : 17
+ 6) Print occurances of each character in a given String : "welcome to automation"
+ 7) Find the maximum and minimum value in a given int array: {11,13,3,7,18,8,9}
+ 8) Read / Write the content from the text file
+ 9) Find all alphabets, numbers and special characters in a given String " $$ Welcome to 1st Automation Interview $$ "
+10) String literal vs Object ( == vs .equals)
+11) Program to swap a number without using a thrid variable?
+12) Method Overloading vs Overriding
+13) List vs Set
+14) HashMap vs HashTable
+15) Interface and Abstract class?
+16) Can a private class be inherited ? If yes, how or if not, why?
+17) Explain inheritance and state why multiple inheritance cannot be done in Java
+18) Why String is immuatable? how will you overcome the drawback in String?
+19) What is final, finally and finalize?
+20) Difference between static and final keyword

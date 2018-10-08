@@ -1,0 +1,23 @@
+****************************************************************
+			HCL - September 8, 2018
+****************************************************************
+
+1.write a program to print the Fibonacci from 1 to 10 
+
+2.write program to get 5 strings in a list and check all the stings are palindrome or not
+The above 2 are programs and the remaining all are scenario based questions 
+1.suppose I am having 3 pages.All the 3 pages are independent to each other. But all the 3 pages are having common header .in all the 3 test case I have to use the common 
+Header part. How many page class will you write?
+I said 3 page class and one common class I will write the header part method and reuse it in all the test cases.but he said you need to create 2 objects for a single test case then.I said I will create a static method then for that common method then no need to create objects .he didn't agreed that too. He expected a different answer I guess.if anyone knows suitable answer for this please post it .
+2.he wrote 2 classes, the derived class is extendeded the base class and a method also overrided base class method.we can create object for either base class or derived class but you should prevent creating object for base class.how will you prevent creating object for base class?
+I said we can make private/final/ static base class then we could not create object for that.but the issue is the derived class has a override method.for this also if anyone knows correct answer please post it.
+
+
+3.suppose I am having 10 lines of code I am using hard assertion in 5 the line and soft assertion in 10 the line.even after failing in 5 the line the code should execute till 10 the line.how will you make it like that.
+
+4.suppose I am having 100 test cases.we are having 2 builds daily morning and evening. 13 test cases I have to test after morning build and remaining 87 cases I have to test in the evening .I have to do this as routine work daily how will you do it.
+
+5.I am changing my mobiles often since I joined in HCl I have used different kind of mobile .I want to store all these information in collections.which collection I should use?
+I said I will go with list and I will choose arraylist he asked why arraylist and why not linked list asked to explain about which collection would be efficient for this scenario
+
+6.he has a page with header,body and footer. He want to retrieve footer data alone and validate the data's inside the footer?

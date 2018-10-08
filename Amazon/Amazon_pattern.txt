@@ -1,0 +1,6 @@
+5 Rounds.
+- Written test (approx 6 questions on testcase enumeration, test data generation, problem solving, program on string/arrays)
+- Scripting (Any tool / language - automation)
+- Problem Solving
+- Bar Raiser
+- Hiring Manager

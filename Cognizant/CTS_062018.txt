@@ -1,0 +1,37 @@
+****************************************
+Cognizant
+****************************************
+
+Round 1
+1. What is overloading and overriding, explain with example in selenium?
+2. How will you convert Integer to String. Write an example?
+3. Explain your project structure?
+4. Explain challenges faced by you?
+5. String str= "Automation Testing"
+Write Java program to extract the constants from String and print each with occurence.
+6. How will you store the String 'Automation Testing' in immutable & mutable types. Explain it?
+
+
+Round 2
+1. Explain about your project?
+2. How will you print all the links of a web page?
+3. Write XPath for following table
+
++-------+------+--------+------------+
+| Name 	|  ENG |   MATH |   SCIENCE  |
++-------+------+--------+------------+
+|  A 	|  50  |   60   |   70       |
++-------+------+--------+------------+
+|  B 	|  20  |   30   |   40       |
++-------+------+--------+------------+
+|  C 	|  50  |   30   |   90       |
++-------+------+--------+------------+
+|  D 	|  20  |   30   |   60       |
++-------+------+--------+------------+
+Wants D's mark in Eng?
+Condition is each and every time D's position (row) and English (col) changes?
+
+4. Explain about select class
+5. What is SDLC & STLC?
+6. Explain about agile and what is your role in srum meeting?
+7. Roles and responsibilities of last project?

@@ -1,0 +1,35 @@
+What is interface in  java?
+An interface in java is a blueprint of a class that have static constants and abstract method by default.
+
+Why we use interface in java? 
+In java we use interface so that we can achieve fully abstraction because through abstract class we can't achieve full abstraction.
+
+Can we create instance of interface?
+No, We cannot create object of both an interface and abstract class.
+
+Can we declare abstract method as static?
+No, We can't use static keyword with abstract method.
+
+Can we declare abstract method as final?
+No, We cannot use final keyword with abstract class.
+
+Can we declare abstract method as private?
+No, We cannot declare abstract method as private.
+
+Can we use public, protected and default modifiers with abstract method?
+Yes, We can use public, protected and default modifiers with abstract method.
+
+Can we declare local inner class as abstract?
+Yes, We can declare local inner class as abstract.
+
+Is Method in interface by default public and abstract?
+Yes, It is true.
+
+Data member in interface are by default public, static, and final.
+Yes, It is true.
+
+Can abstract method declaration include throws clause?
+Yes.
+
+What will happen if we do not override all the abstract methods in sub-class?
+It will throw compile-time error. We have to override all the abstract method in sub-class. If you do not want to override all the abstract method in sub-class then you have to make your sub-class as abstract class.

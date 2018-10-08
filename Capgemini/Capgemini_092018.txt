@@ -1,0 +1,19 @@
+***************************************************
+		CAPGEMINI - SEP 2018
+***************************************************
+
+Capgemini technical round:
+1. Write code for "Dynamic webtable verify the text then if text available then need to check by default some value should selected in drop-down in the same row with different column".explain the code
+2.overloading +overriding related questions
+3.write code if the given label available then only I need to enter text
+4.sorting numbers program without using inbuilt method
+5.how to select invisible  content in screen 
+(Manually drag and drop)
+6.in built classes in selenium
+7.Arrays 
+8.collections 
+9.hashmap
+10.cucumber
+11.how to use parameterization in cucumber (not data provider and examples )
+12. Write step defination when your passing parameters 
+13.framework explination

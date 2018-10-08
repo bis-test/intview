@@ -1,0 +1,13 @@
+*****************************************************************
+			VIRTUSA - September 2018
+*****************************************************************
+
+1. Explain about yourself and your project? - for just intro and the below questions:
+
+2. How will u work on building the scripts during environment downtime ( you should not ask developer for DOM) but you've to build the scirpt for the webpage on the 1 hour without wasting it.
+
+3. Explain about your framework in detail with actual application you worked.? (Not the example of random one, they asked to explain what you actually worked with that functionalities) 
+
+4. Did u really work in selenium grid? Explain what you have done using grid?
+
+5. Tomorrow we need to close the execution, what all are the ways to save the time through test Ng?

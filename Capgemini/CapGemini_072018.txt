@@ -1,0 +1,574 @@
+*********************************************************
+		CAPGEMINI - July 2018
+
+*********************************************************
+
+
+1. How will you write the data into an excel ?
+
+public class ExcelWriter3 
+{
+
+	public static void main(String[] args) throws IOException 
+         {
+		XSSFWorkbook workbook = new XSSFWorkbook();
+		XSSFSheet sheet = workbook.createSheet("Java Books");
+
+		Object[][] bookData = 
+                {
+				{"Head First Java", "Kathy Serria", 79},
+				{"Effective Java", "Joshua Bloch", 36},
+				{"Clean Code", "Robert martin", 42},
+				{"Thinking in Java", "Bruce Eckel", 35},
+		};
+
+		int rowCount = 0;
+
+		for (Object[] aBook : bookData) {
+			Row row = sheet.createRow(++rowCount);
+
+			int columnCount = 0;
+
+			for (Object field : aBook) {
+				Cell cell = row.createCell(++columnCount);
+				if (field instanceof String) {
+					cell.setCellValue((String) field);
+				} else if (field instanceof Integer) {
+					cell.setCellValue((Integer) field);
+				}
+			}
+
+		}
+
+		try (FileOutputStream outputStream = new FileOutputStream("JavaBooks.xlsx")) {
+			workbook.write(outputStream);
+		}
+	}
+
+}
+
+
+
+2. What is JavaExecutor ?
+In Selenium Webdriver, locators like XPath, CSS, etc. are used to identify and perform operations on a web page.
+In case, these locators do not work you can use JavaScriptExecutor. 
+You can use JavaScriptExecutor to perform an desired operation on a web element.
+Selenium support javaScriptExecutor. There is no need for an extra plugin or add-on. 
+You just need to import (org.openqa.selenium.JavascriptExecutor) in the script as to use JavaScriptExecutor .
+
+Java script executor is a class using which we can execute java script commands.
+class RemoteWebDriver implements WebDriver, JavascriptExecutor
+
+Asynchronous
+Execute Script
+
+
+	//Creating the JavascriptExecutor interface object by Type casting		
+        JavascriptExecutor js = (JavascriptExecutor)driver;		
+        		
+        //Launching the Site.		
+        driver.get("http://demo.guru99.com/V4/");			
+        		
+        WebElement button =driver.findElement(By.name("btnLogin"));			
+        		
+        //Login to Guru99 		
+        driver.findElement(By.name("uid")).sendKeys("mngr34926");					
+        driver.findElement(By.name("password")).sendKeys("amUpenu");					
+        		
+        //Perform Click on LOGIN button using JavascriptExecutor		
+        js.executeScript("arguments[0].click();", button);
+
+
+
+
+3. What is Reflection class?
+Java Reflection makes it possible to inspect classes, interfaces, fields and methods at runtime, without knowing the names of the classes
+methods etc. at compile time. It is also possible to instantiate new objects, invoke methods and get/set field values using reflection.
+The java.lang.Class class provides many methods that can be used to get metadata, examine and change the run time behavior of a class.
+
+class Simple{}  
+interface My{}  
+
+
+class ReflectionDemo2 
+{
+	public static void main(String[] args) throws ClassNotFoundException 
+       {
+		Class c=Class.forName("Simple");  
+		System.out.println(c.isInterface());  
+
+		Class c2=Class.forName("My");  
+		System.out.println(c2.isInterface());  
+	}
+}
+
+
+
+4. How will you handle windows popup?
+If it is browser popup, using browser options we can disable the notifications
+		//Browser options
+		ChromeOptions op=new ChromeOptions();
+		op.addArguments("--disable-notifications");
+		ChromeDriver driver = new ChromeDriver(op);
+
+
+If it is alert then we can accept or dismiss based on our requirement
+		driver.switchTo().alert().dismiss();
+		driver.switchTo().alert().accept();
+
+
+
+5. String s1="hello";
+          s2="hello";
+		  
+s1==s2 -->retuns what?
+s1.equals(s2) -> returns what?
+
+Ans: First, the data type is missing for s2. We need to have String s2="hello"
+
+s1==s2 -->retuns true
+s1.equals(s2) -> returns true
+
+	String s1="hello";
+        String s2="hello";
+        
+        if(s1==s2)
+        {
+        	System.out.println("String matches 1");
+        	System.out.println(s1==s2);
+        }
+        
+        if(s1.equals(s2))
+        {
+        	System.out.println("String matches 2");
+        	System.out.println(s1.equals(s2));
+        }
+
+
+		  
+6. There is a value in a web table, each row contains a radio button in the webtable.. 
+   Using the value, how will you select that row's radio button.
+
++---------------------------------------+
+|                Results                |
++-------------+-------+--------+--------+
+| Swimming    |  1:30 |   2:05 |   o	|
++-------------+-------+--------+--------+
+| Running     | 15:30 |  14:10 |   o	|
++-------------+-------+--------+--------+
+| Walking     | 15:30 |  14:10 |   o	|
++-------------+-------+--------+--------+	
+
+//td[text()='Running']/following-sibling::td[2]
+OR
+//td[text()='Running']/following-sibling::input[@type='radio']
+	
+7. Where will you store the webelements in your test case ?
+Ans: Page Factory - Single language. xpath doesn't change.
+     Properties file - Multi lingual applications. xpath changes like male, female. Bank bazar
+
+
+8. How many test cases will you design per day ?
+Ans: It depends on the complexity of the functionality, application specifications
+     On an average we can design 2-3 testcases of high complexity
+     4-5 if the testcase is of medium complexity
+     6-7 if the testcase is of low complexity
+
+9. How many cases will you execute per day ?
+Ans: It depends on the project. On an average
+     high level test cases-> 5 to 8 testcases
+     medium level testcases-> 15 to 20 testcases
+     low level testcases-> upto 30 testcases 
+
+10.  How will you select the entered value from a text box ?
+Ans: Using getAttribute("value") method
+     WebElement email = driver.findElementById("email");
+     email.getAttribute("value")
+
+11. difference between getText and getAttribute..
+Ans: 
+	getText - Get the visible (i.e not hidden by css) inner text of the element 
+          	  without any leading or trailing spaces. Text between the tags
+	getAttribute - Get the value of the given attribute of the element. 
+
+<input attr1='a' attr2='b' attr3='c'>foo</input>
+getAttribute(attr1) you get 'a'
+getAttribute(attr2) you get 'b'
+getAttribute(attr3) you get 'c'
+getText() with no parameter you can only get 'foo'
+
+12. Notice period?
+Ans: 60days. My project is ramping up and I can try negotiating with my project manager 
+     to release me early.    
+
+13. How will you estimate?
+Ans: We categorize the user stories based on complexity. High-medium-low
+Then the resource skill set is taken into consideration.
+We keep the previous projects as a reference to check how much time the functionality would check.
+Then the hours estimation is done.
+We also keep few hours as buffer and few hours for meetings/management.
+
+
+14. Write Xpath using contains?
+Ans: "//h4/a[contains(text(),'SAP M')]"
+
+
+15. How to enter OTP using selenium web driver?
+
+| User Name |__________|                            ________ 
+             __________        ----->    Enter OTP |________|
+| User Name |__________| 
+ 	 _______
+	|_Logon_|
+
+To enter OTP numbers, the numbers will be encrypted. So we need to create a new popup
+which should be like this
+            __________
+ Enter OTP |__________|                          
+  
+	 ____
+	|_OK_|
+
+We will enter the OTP and then press OK so it will take the value and fill in the OTP text box 
+of the application and continue.
+
+
+16. Get the value ABCD from child window C and then move back to the parent window.
+
+.....................
+. A                 .               
+. ................. .          
+. . B             . .              
+. .               . . 
+. .  ........     . .
+. .  .C ABCD.     . . 
+.    ........     . .            
+. . ............... .               
+.                   .
+.....................
+
+
+String parentwindow= driver.getWindowHandle();
+
+	Set<String> Allwindow = driver.getWindowHandles();
+	List<String> listwindow = new ArrayList<String>();
+
+	listwindow.addAll(Allwindow);
+        int size = listwindow.size();
+        System.out.println("The number of windows =" +size);
+    
+        String secwin = listwindow.get(1);
+        driver.switchTo().window(secwin);
+
+        System.out.println("I am at = "+driver.getTitle());
+
+
+	Allwindow = driver.getWindowHandles();
+	listwindow = new ArrayList<String>();
+
+	listwindow.addAll(Allwindow);
+        size = listwindow.size();
+        System.out.println("The number of windows =" +size);
+    
+        String thwin = listwindow.get(2);
+        driver.switchTo().window(thwin);
+		
+	System.out.println("I am at = "+driver.getTitle());
+
+
+	WebElement head = driver.findElementById("head");
+	System.out.println(head.getText());
+		
+	driver.switchTo().window(parentwindow);
+	System.out.println("I am at = "+driver.getTitle());
+
+        driver.close() //will close current window
+        driver.quit() //will close all windows
+
+
+17. Explain framework
+Ans: Draw the diagram of a hybrid framework and explain in detail.
+
+18. Suppose you have 600 testcases. How will you run in parallel.
+Ans: In the testNG.xml file we can specify that.
+<suite name="Parallel test suite" parallel="methods" thread-count="2">
+  <test name="Regression 1">
+    <classes>
+      <class name="com.parallel.TestParallelOne"/>
+    </classes>
+  </test>
+</suite>
+
+parallel = can be methods/classes or tests.
+
+18. Explain git. Suppose both the members use/modify same code what will happen? 
+
+Git is a version control System (VCS). It is a repository of the code base that allows to track changes.
+It is really easy to track who changed it, what is changed, when it was changed etc.
+Multiple people can work on a single project  
+
+If both the people modify the same code then, it will create merge conflict.
+It will show the code this way and we can keep the version we want to.
+
+If you have questions, please
+<<<<<<< HEAD
+open an issue
+=======
+ask your question in IRC.
+>>>>>>> branch-a
+
+19. What is Jenkin? what are the possible ways to run?
+
+Jenkin is a build tool. It can trigger the test scripts automatically  when some code change happens
+and send email to the interested parties.
+
+We can schedule the jobs to run. It saves all the build history (execution report/test report).
+
+
+20. Explain OOPS concept of java in one single program.
+
+There are many oops concepts like - class, object, inheritance, polymorphism, Abstraction, Encapsulation, Aggregation, Composition
+
+
+abstract class Bank
+{  
+	abstract float rateOfInterest();  
+}  
+class SBI extends Bank{  
+	public float rateOfInterest(){return 9.15f;}  
+}  
+class PNB extends Bank{  
+	public float rateOfInterest(){return 9.7f;}  
+}  
+
+public class OopsConcepts 
+{
+
+	public static void main(String[] args) 
+       {
+
+		Bank b=new SBI();  
+		System.out.println("ROI: "+b.rateOfInterest());  
+	}  
+
+}
+
+21. What is set & list?
+
+Set is a collection interface. Two types - Hash Set, Tree Set
+Hash set is unique value. Fast beacuse it works with heap storage.
+Tree set is unique value & Ascending order & comparatively slower.
+We have methods like - add, addAll, isEmpty, remove, clear, first, last, size
+
+HashSet<String> set=new HashSet<String>();  
+TreeSet<String> al=new TreeSet<String>();  
+al.add("Ravi");   
+al.add("Priyanka"); 
+	Iterator<String> itr=set.iterator();  
+  	while(itr.hasNext())
+        {  
+   	System.out.println(itr.next());  
+  	}  
+
+List is a collection interface. Two types - Array list, linked list
+Allows duplicates.
+Has methods like - add, addAll, clear, isEmpty, remove, sort, size
+
+ArrayList<String> al=new ArrayList<String>(); 
+LinkedList<String> al=new LinkedList<String>(); 
+al.add("Ravi");  
+al.add("Vijay");  
+for(String obj:al)  
+System.out.println(obj);   
+
+22. How to sort the dates in java
+
+10 oct 1988
+15 nov 1979
+
+Ans:Pending
+
+23. a--bcd$----cd. If I want single spaces instead of multiple spaces.
+
+Ans: 
+        String str = "a  bcd$            cd.";
+        StringTokenizer st = new StringTokenizer(str, " ");
+        StringBuffer sb = new StringBuffer();
+        while(st.hasMoreElements()){
+            sb.append(st.nextElement()).append(" ");
+        }
+        System.out.println(sb.toString().trim()); 
+
+24. Having 100 objects having employee id & name. How to sort using employee id.
+
+http://www.thejavageek.com/2013/06/17/sorting-user-defined-objects-part-2/
+
+25. Access Modifiers
+
+26. Window handling. Why are we using list and set. Without list can we achieve?
+
+It prevents possible handlers duplication in the collection which may cause multiple invocations of the same handler after every event. 
+List can has duplicated elements and Set can't.
+
+Afer storing in set, we store in list because the get(index) method is not available in set.
+
+Set<String> Allwindow = driver.getWindowHandles();
+List<String> listwindow = new ArrayList<String>();
+listwindow.addAll(Allwindow);
+String secwin = listwindow.get(1);
+driver.switchTo().window(secwin);
+
+27. Implicit & explicit wait? This both does the same. What is the difference.
+
+Implicit wait --
+
+Implicit waits are basically your way of telling WebDriver the latency that you want to see if specified web element is not present that WebDriver looking for. 
+So in this case, you are telling WebDriver that it should wait 10 seconds in cases of specified element not available on the UI (DOM).
+
+Explicit wait--
+
+Explicit waits are intelligent waits that are confined to a particular web element. 
+Using explicit waits you are basically telling WebDriver at the max it is to wait for X units of time before it gives up.
+ 
+
+28. What are the challenges you have faced?
+
+- Uploading files 
+		WebElement file = driver.findElementByXPath("//input[@type='file']");
+		file.sendKeys("C:\\RESUME.docx");
+
+- screen shot of alert
+		// create object to robot class
+		Robot rb = new Robot();
+
+		// create rectangle for full screenshot
+		Rectangle screenRect = new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
+
+		// capture screen of the desktop
+		BufferedImage screenFullImage= rb.createScreenCapture(screenRect);
+
+		// save the screenshot to local system
+		ImageIO.write(screenFullImage, "png", new File("./snap/Alert1.png"));
+
+-Verifying OTP
+         Created another layer, so a prompt will ask the OTP and user can enter
+
+- Verifying captcha 
+         
+         Created another layer, so a prompt will ask the OTP and user can enter
+
+- We were having performance issues and after investigating itwas found the database threads
+were open and not closed. So it was having memory leaks 
+
+
+29. What are the classes available in selenium
+
+ChromeDriver
+FirefoxDriver
+InternetExplorer
+WebDriverWait
+Throwable
+Exception
+RunTimeException
+WebdriverException
+NoSuchElement exception
+
+
+30. What are the annotations used in cucumber
+
+Ans: Annotation is a predefined text, which holds a specific meaning. 
+It lets the compiler/interpreter know, what should be done upon execution. 
+Cucumber has got the following few annotations -
+
+Given - It describes the pre-requisite for the test to be executed.
+        Example - GIVEN I am a Facebook user
+
+When -  It defines the trigger point for any test scenario execution.
+        Example - WHEN I enter "<username>"
+
+Then -  Then holds the expected result for the test to be executed.
+        Example - THEN login should be successful.
+
+And -   It provides the logical AND condition between any two statements. 
+	AND can be used in conjunction with GIVEN, WHEN and THEN statement.
+        Example - WHEN I enter my "<username>" AND I enter my "<password>"
+
+But -   It signifies logical OR condition between any two statements. 
+        OR can be used in conjunction with GIVEN, WHEN and THEN statement.
+        Example - THEN login should be successful. BUT home page should not be missing.
+
+Scenario - Details about the scenario under the test needs to be captured after the keyword “Scenario:”
+           Example -
+           Scenario:
+           GIVEN I am a Facebook user
+           WHEN I enter my
+           AND I enter my
+           THEN login should be successful.
+           BUT home page should not be missing.
+
+Scenario Outline - Use data input
+
+Background - Background generally has the instruction on what to setup before each scenario runs. 
+             However, it gets executed after “Before” hook (to be covered later). 
+             So this is ideal to be used for code when we want to set up the web-browser 
+             or we want to establish the database connectivity.
+
+	     Example -   Background:
+             Go to Facebook home page.
+
+31. How to parameterize in cucumber
+
+This is data driven testing. Use the data in feature file. 
+Use scenario outline.
+
+
+32. How to use data in cucumber?
+using maps - http://toolsqa.com/cucumber/maps-in-data-tables/?t=2
+
+33. How to group steps in cucumber.
+
+
+34. Write a sorting program
+
+public class BubbleSortExample {  
+    static void bubbleSort(int[] arr) {  
+        int n = arr.length;  
+        int temp = 0;  
+         for(int i=0; i < n; i++){  
+                 for(int j=1; j < (n-i); j++){  
+                          if(arr[j-1] > arr[j]){  
+                                 //swap elements  
+                                 temp = arr[j-1];  
+                                 arr[j-1] = arr[j];  
+                                 arr[j] = temp;  
+                         }  
+                          
+                 }  
+         }  
+  
+    }  
+    public static void main(String[] args) {  
+                int arr[] ={3,60,35,2,45,320,5};  
+                 
+                System.out.println("Array Before Bubble Sort");  
+                for(int i=0; i < arr.length; i++){  
+                        System.out.print(arr[i] + " ");  
+                }  
+                System.out.println();  
+                  
+                bubbleSort(arr);//sorting array elements using bubble sort  
+                 
+                System.out.println("Array After Bubble Sort");  
+                for(int i=0; i < arr.length; i++){  
+                        System.out.print(arr[i] + " ");  
+                }  
+   
+        }  
+}  
+
+35. What is list in this code?
+     ArrayList<String> list=new ArrayList<String>();
+
+ArrayList is the class. list is the object using which we can access class methods.
+
+ 

@@ -1,0 +1,19 @@
+1. Brief about yourself?
+2. Explain framework?
+3. Suppose you have 100 testcases, how will you achieve that in parallel?
+4. Explain GIT, Suppose both the team members are modifying the same code, what will happen?
+5. Jenkins. What are the possible ways to schedule?
+6. Explain OOPS concept in Java using single program?
+7. Exception?
+8. Set & List - Expecting 100 % knowledge.
+9. Collections
+10. Suppose your team members are writing same set of step definition method. How you can identify and correct it?
+11. How will you sort the below two strings?
+	10 OCT 1988
+    	15 NOV 1979  
+12. a--bcd$----cd. If we want single spaces instead of multiple spaces?
+13. Having 100 objects having emp id & name. How to sort them using emp id?
+14. Access modifiers?
+15. Window handling. Why are we using list and set? Without list whether we can achieve?
+16. Implicit wait & explicit wait? Both does the same or what is the difference?
+17. What are the challenges you have faced and how you have mitigated them?  

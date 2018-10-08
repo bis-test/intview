@@ -1,0 +1,54 @@
+*************************************************************
+		TECH MAHINDRA – August 10, 2018
+*************************************************************
+
+
+Java questions:
+
+1) Difference between final and static keyword
+2) what is exception, and what is exception handling
+3) difference among JDK, JVM and jre
+4) why Java is not 100% object oriented
+5) difference between object and class
+6) difference between array and vector
+7) hasmap and hasindex
+8) inheritance concepts
+9) what is interface and explain it
+10) method overloading and overriding
+11) what is constructor and explain
+12) difference between public and private
+13) difference between public and protected
+14) explain about garbage collection
+15) final, finally and finalize
+16) write a program to transfer data from TXT files to excel file
+17) explain about ' public static void main'
+
+Selenium questions:
+
+1) different types of locators
+2) write the whole structure of your framework
+3) explain the framework
+4) explain about Data provider
+5) explain about Jenkins
+6) explain about Maven
+7) explain about select class
+8) how to print the selected drop down value without using the visible text or select by index or select by value
+9) explain about cucumber
+10) explain about webdriver
+11) write a code for parellel execution
+12) how many testng.xml file are there in your project
+13) explain about the annotations using in selenium
+14) write a code to launch Firefox browser
+15) explain about css selector
+16) how to initiate the driver
+17) explain about page factory and @findby annotation
+1. What is blank final variable 
+2. What is static class loading and dynamic class loading
+3. Diff b/w Iterator and Enumerator
+4. How to select 3rd element from the list of elements
+5. How to refresh the browser in selenium 
+6. Cucumber feature file
+7. Step definition file
+8. What is DryRun
+9. What is background in cucumber
+10. Runner in cucumber

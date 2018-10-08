@@ -1,0 +1,24 @@
+***************************************************
+		WIPRO (08/09/2018)
+***************************************************
+Round 1
+1. Give a brief about yourself?
+2. Advantages of using BDD
+3. Reason for implementing Cucumber in your project
+4. Web table handling- In specific column check for specific value and Print the value of other column in the same row.
+5. In what memory objects are getting stored in java
+6. Is it possible to save file without anyname(eg:- .java). justify your answer.
+7. What is .jar and .war?
+8. What are the new modules in latest Java version?
+9. Java program to find and print reoccurrence of char in a String.
+10. Write program - click on "department" menu then list of webelements getting displayed. Select all elements with word "echo" then click on the First element which again displays another list of webelements. Print all elements with "echo" word from latest list.
+
+Round2:
+1. Brief about yourself.
+2. How do you do Automation feasibility for a requirement?
+3. How do you prioritize the requirements for Automation?
+4. What is the CI tool used in your project and what is your role in it?
+5. What is it recent hands-on in framework extension.
+6. Rate yourself in java
+7. Write a program for string reversal without using reverse function.
+8. Write a program to check whether the given string is palindrome or not.

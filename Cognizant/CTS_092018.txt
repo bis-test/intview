@@ -1,0 +1,68 @@
+************************************************************
+			Cognizant - SEP 2018
+************************************************************
+
+1. What are the testNG annotations? 
+2. Can you give example of some testNG annotations you have used in your project?
+3. Have you run your test cases parallel? How?
+4. What is priority, how can we prioritize test cases and run?
+5. How will you group test cases and run?
+6. What is depend on group in testNG?
+7.  Why do we use TestNG, what is the benefit?
+8.  What is before test, what is after test?
+9.  Which framework do you use?
+10. Why do you go for keyword driven framework?
+11. Can you give an example of keyword driven scenario
+12. For sending an email in the keyword driven framework, how will you write the code/design keywords
+13. How do you design keyword design frameworks, how do you define keywords?
+14. Have you designed any framework?
+15. What is keyword driven framework, how do you write the code?
+16. What is the difference between Junit and TestNG?
+17. What is the super class of webdriver?
+18. What are the collections you have used in your project
+19. How will you traverse collections - using iterator, for loop etc.
+20.  What is the difference between list, set, map?
+21. Can we have duplicates in maps?
+22. What is the difference between string builder & string buffer?
+23. In which scenario we will use string, when string buffer & when string builder?
+24. What is thread safe?
+25. What is encapsulation? How have you used in your project?
+26. What is method over loading, what is method overriding, which one is compile time, which one is run time?
+27. in which scenario we can use method overriding/overloading? realtime project
+28. What is the difference between interface & abstract class?
+29. When will you use interface & when will you use abstract class 
+30. We have static class, how will you call variables, methods
+31. What is the benefit of creating static methods/static variables.
+32. What is final keyword, final variable/final method.
+33. What is enum? How have you used it in your selenium project?
+
+
+34. What is synchronization in selenium?
+35. Why do we need to have wait?
+35.  Which wait do you use in selenium – Implicit or explicit?
+33.  Why do we use explicit wait and why not implicit wait?
+37.  What is the default wait time of selenium?
+38.  Web Driver is class or interface?
+36.  What are the exceptions you have faced and how did you solve them?
+35.  What is stale element reference exception?
+36.  Have you used any third party tools?
+37.  What are the challenges you have faced in your project?
+38.  How to upload files?
+39.  How to do right click?
+40.  How do you hover an element?
+41.  Can you give some examples of classes used in selenium?
+42.  What are the identifiers we have, locators?
+43.  What is the difference between following & following sibling?
+44.  What is the difference between following and descendant?
+45.  How will you locate the element using x path which is hiding sometimes (use CSS selector)?
+46.  How will you traverse a table and read each cell?
+47.  Is there any alternative approach reading table without using for loop?
+48.  How many test cases do you have for sanity & how many do you have for regression?
+49. How do you execute test cases. Local machines/parallel
+50.  Can you explain grid?
+51.  Have you written any manual test cases?
+52.  Which methodology do you use?
+53.  What are the agile ceremonies you have?
+54.  Have you acted as scrum master?
+55.  Have you worked on CI?
+56. Have you done any headless browser testing? and how?

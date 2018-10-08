@@ -1,0 +1,14 @@
+*****************************************
+		Cognizant -- october 2018
+*****************************************
+
+1.Annotations in testng
+
+2.Method of passing the values apart from excel and DB  in testng
+3.Way to pass the static values 
+
+4.How to get all the values from the particular columns in a web table with drawn
+
+5.Agile questions 
+
+6.Everyday tasks in a project

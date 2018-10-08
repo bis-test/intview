@@ -1,0 +1,53 @@
+****************************************************************
+		Cognizant - July 2018
+***************************************************************
+
+
+* Tell about urself
+* Whats the framework u r using in ur project?
+* Can u draw the architecture and explain ?
+* How will u handle multiple windows, how will u come back to parent window ?
+* In how many ways u can find whether frames are present in a web page ?. What are ways to move  to a frame ?
+* Have u connected db from ur project, write code for it .
+* What is implict wait , explicit wait, and fluent wait... Write syntax for all.
+* Difference between final and finally ?
+* What is the collection ? Explain the types in detail ?
+* Have u worked on testNg.. explain what are the types of annotations and the order in which it execute.? 
+* What is xpath.. what are the ways in which u can handle xpath.. how will u handle dynamic xpath ? 
+* What is the use of New keyword and what will method overloading do ?
+* Consider a string { mon, tus, wed } 
+And then using for each loop v r iterating and adding them in list. What will be the output if the ArrayList is created outside the foreach and output if the arraylist is created inside foreach loop.
+* Is there any possible ways to enter text without send keys.
+* Consider u r using groups, there are groups like regression, sanity and functional. Now u need to run Sanity group, sanity will be having 50 testcases, in that i want any 30 random testcases alone to run. What are the ways ?
+* Explain page object model in step by step way how will u implement it ? 
+* Why CTS ?
+* Reason for switching ?
+
+********************************************************************************
+
+
+1st round :
+1. Explain About BDD Framework
+2. Cucumber options 
+3. Cucumber Keywords
+4. Cucumber framework structure 
+5. In a webpage inside some data will be available in scrolling. How to see the data to scroll the inside page
+      - I said JavaScriptExecutor for Window Scrolling
+6. Write cucumber Runner class
+7.Double click functionality(Actions)
+
+
+
+2nd Round :
+1.difference between / and // - (absolute andrelative xpath)
+2.how Right click functionality in selenium
+3.Explain about interface
+4.inheritance
+5.String buffer and String builder difference ? (What is sychronized)
+6.You will verify the code review , what are the things you will check mandatory
+7.how to synchronize the code 
+8.Explain about list and hashmap
+9.list syntax 
+10.Verify and assert difference
+11. Mouse-Hoover Functionality
+12. Syncronize wait

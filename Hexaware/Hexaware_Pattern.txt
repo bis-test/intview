@@ -1,0 +1,20 @@
+***************************************
+	INTERVIEW PATTERN HEXAWARE
+***************************************
+
+1st Round: Online Exam
+- 30 Multiple choice questions on Selenium. 
+- 2 Java related Questions - fill the missing line of codes
+
+2nd Round: Technical F2F
+
+
+3rd Round: HR
+
+
+
+*******************************************
+Tips
+There will be 4 to 5 Selenium IDE Questions. 
+So go through some of the Selenese Commands] 
+
