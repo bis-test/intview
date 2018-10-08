@@ -1,0 +1,22 @@
+*********************************************************
+
+		GOLDEN RULES FOR INTERVIEW
+
+*********************************************************
+
+1. Update ‘Resume’ in Naukri, everyday 10 AM
+2. Send ‘Resume’ to recruiters everyday at 10 AM
+3. Send ‘Resume’ multiple times to recruiters
+4. If any questions asked in the interview
+•	Keep it short
+•	Don’t give bookish answer, or sound like you have mugged up
+•	Say in simple words in your way (don't spend more than 10 seconds) 
+5. If any java questions asked
+•	Tell the concept
+•	Tell how we use in selenium
+•	Tell where do we use in selenium framework/project
+6. If any java programs asked
+•	Write down the code you know
+•	Write down in different approaches
+•	Then say which is more efficient and why
+7. Use LinkedIn to apply jobs
